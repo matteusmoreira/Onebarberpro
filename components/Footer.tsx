@@ -7,10 +7,11 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center mb-12">
           <div className="flex items-center gap-2 mb-6 md:mb-0">
-             <div className="p-2 bg-neutral-900 rounded-full border border-neutral-800">
-                <Scissors className="w-5 h-5 text-gold-500 transform -rotate-45" />
-              </div>
-              <span className="text-xl font-bold text-white">BarberPro</span>
+            <img
+              src="https://nestarts.com.br/wp-content/uploads/2025/11/ONE-BARBER-PRO-PNG-1.png"
+              alt="OneBarber Pro"
+              className="h-20 w-auto"
+            />
           </div>
 
           <div className="flex gap-6">

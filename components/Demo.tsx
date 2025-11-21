@@ -1,7 +1,26 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { TabletSmartphone } from 'lucide-react';
 
 const Demo: React.FC = () => {
+  const [imgSrc, setImgSrc] = useState('https://nestarts.com.br/wp-content/uploads/2025/11/WhatsApp-Image-2025-11-21-at-15.52.18.jpeg');
+  const fileInputRef = useRef<HTMLInputElement | null>(null);
+
+  useEffect(() => {
+    const saved = localStorage.getItem('demo-img-v2');
+    if (saved) setImgSrc(saved);
+  }, []);
+
+  const onPickFile = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = ev => {
+      const data = ev.target?.result as string;
+      localStorage.setItem('demo-img-v2', data);
+      setImgSrc(data);
+    };
+    reader.readAsDataURL(file);
+  };
   return (
     <section id="demo" className="py-20 bg-gradient-to-b from-neutral-900 to-neutral-950 border-t border-neutral-800">
       <div className="container mx-auto px-6">
@@ -36,10 +55,17 @@ const Demo: React.FC = () => {
           <div className="lg:w-1/2 relative">
             <div className="relative z-10 rounded-2xl overflow-hidden border-2 border-neutral-800 shadow-2xl shadow-black group">
               <img 
-                src="https://picsum.photos/id/445/800/600" 
-                alt="Barber using tablet" 
+                src={imgSrc}
+                onError={() => setImgSrc('https://picsum.photos/id/445/800/600')}
+                alt="Agenda e edição de ordem"
                 className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
               />
+              {import.meta.env.DEV && (
+                <div className="absolute top-3 right-3 z-20">
+                  <input ref={fileInputRef} type="file" accept="image/*" className="hidden" onChange={onPickFile} />
+                  <button onClick={() => fileInputRef.current?.click()} className="px-3 py-1 text-xs rounded bg-neutral-900/80 border border-white/10 text-white hover:bg-neutral-800">Trocar imagem</button>
+                </div>
+              )}
               {/* Overlay Gradient */}
               <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent opacity-80"></div>
               

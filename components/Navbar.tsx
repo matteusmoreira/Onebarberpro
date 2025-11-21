@@ -27,12 +27,11 @@ const Navbar: React.FC = () => {
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         <div className="flex items-center gap-2 group cursor-pointer">
-          <div className="p-2 bg-gradient-to-br from-gold-400 to-gold-600 rounded-full shadow-lg shadow-gold-500/20 group-hover:shadow-gold-500/40 transition-all">
-            <Scissors className="w-5 h-5 text-neutral-950 transform -rotate-45" />
-          </div>
-          <span className="text-xl font-bold tracking-wider text-white uppercase">
-            Barber<span className="text-gold-500">Pro</span>
-          </span>
+          <img
+            src="https://nestarts.com.br/wp-content/uploads/2025/11/ONE-BARBER-PRO-PNG-1.png"
+            alt="OneBarber Pro"
+            className="h-20 w-auto"
+          />
         </div>
 
         <div className="hidden md:flex items-center gap-8 text-sm font-semibold tracking-wide">

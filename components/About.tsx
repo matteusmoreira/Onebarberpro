@@ -44,7 +44,7 @@ const About: React.FC = () => {
           <FeatureItem 
             icon={Bell} 
             title="Lembretes Automáticos" 
-            desc="Reduza o 'no-show' drasticamente. O sistema avisa seus clientes via WhatsApp ou E-mail automaticamente." 
+            desc="Reduza o 'no-show' drasticamente. O sistema avisa seus clientes via E-mail automaticamente." 
           />
           <FeatureItem 
             icon={Globe} 
