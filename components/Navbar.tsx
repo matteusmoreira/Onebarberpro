@@ -38,9 +38,9 @@ const Navbar: React.FC = () => {
           <a href="#about" className="text-gray-300 hover:text-gold-400 transition-colors">O SISTEMA</a>
           <a href="#benefits" className="text-gray-300 hover:text-gold-400 transition-colors">BENEFÍCIOS</a>
           <a href="#demo" className="text-gray-300 hover:text-gold-400 transition-colors">DEMONSTRAÇÃO</a>
-          <button className="px-6 py-2 border border-gold-500/30 text-gold-400 rounded hover:bg-gold-500 hover:text-neutral-900 transition-all duration-300 shadow-[0_0_10px_rgba(212,175,55,0.1)] hover:shadow-[0_0_20px_rgba(212,175,55,0.4)]">
+          <a href="https://wa.me/+5522992938311" target="_blank" rel="noopener noreferrer" className="px-6 py-2 border border-gold-500/30 text-gold-400 rounded hover:bg-gold-500 hover:text-neutral-900 transition-all duration-300 shadow-[0_0_10px_rgba(212,175,55,0.1)] hover:shadow-[0_0_20px_rgba(212,175,55,0.4)]">
             ÁREA DO CLIENTE
-          </button>
+          </a>
         </div>
       </div>
     </nav>

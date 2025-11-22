@@ -33,12 +33,12 @@ const Hero: React.FC = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <button className="group relative px-8 py-4 bg-gold-600 hover:bg-gold-500 text-neutral-950 font-bold rounded-lg shadow-[0_0_20px_rgba(197,160,40,0.3)] transition-all duration-300 overflow-hidden">
+            <a href="https://wa.me/+5522992938311" target="_blank" rel="noopener noreferrer" className="group relative px-8 py-4 bg-gold-600 hover:bg-gold-500 text-neutral-950 font-bold rounded-lg shadow-[0_0_20px_rgba(197,160,40,0.3)] transition-all duration-300 overflow-hidden">
               <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
               <span className="relative flex items-center justify-center gap-2">
                 QUERO MEU SISTEMA AGORA <ArrowRight className="w-5 h-5" />
               </span>
-            </button>
+            </a>
           </div>
         </div>
 

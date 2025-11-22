@@ -18,14 +18,14 @@ const CallToAction: React.FC = () => {
         </p>
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-6">
-          <button className="w-full md:w-auto px-10 py-5 bg-gold-600 hover:bg-gold-500 text-neutral-950 text-lg font-bold rounded-lg shadow-[0_0_30px_rgba(197,160,40,0.4)] hover:shadow-[0_0_50px_rgba(197,160,40,0.6)] transition-all duration-300 transform hover:-translate-y-1">
+          <a href="https://wa.me/+5522992938311" target="_blank" rel="noopener noreferrer" className="w-full md:w-auto px-10 py-5 bg-gold-600 hover:bg-gold-500 text-neutral-950 text-lg font-bold rounded-lg shadow-[0_0_30px_rgba(197,160,40,0.4)] hover:shadow-[0_0_50px_rgba(197,160,40,0.6)] transition-all duration-300 transform hover:-translate-y-1">
             ADQUIRIR AGORA
-          </button>
+          </a>
           
-          <button className="w-full md:w-auto px-10 py-5 bg-transparent border border-neutral-700 hover:border-green-500 text-white text-lg font-semibold rounded-lg hover:bg-neutral-900 transition-all duration-300 flex items-center justify-center gap-3 group">
+          <a href="https://wa.me/+5522992938311" target="_blank" rel="noopener noreferrer" className="w-full md:w-auto px-10 py-5 bg-transparent border border-neutral-700 hover:border-green-500 text-white text-lg font-semibold rounded-lg hover:bg-neutral-900 transition-all duration-300 flex items-center justify-center gap-3 group">
             <MessageCircle className="w-6 h-6 text-green-500 group-hover:text-green-400" />
             <span className="group-hover:text-green-400 transition-colors">Falar via WhatsApp</span>
-          </button>
+          </a>
         </div>
 
         <div className="mt-12 flex flex-wrap justify-center gap-8 text-sm text-gray-500 font-medium">
