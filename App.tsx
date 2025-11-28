@@ -5,6 +5,7 @@ import About from './components/About';
 import Benefits from './components/Benefits';
 import Demo from './components/Demo';
 import Diferenciais from './components/Diferenciais';
+import Integrations from './components/Integrations';
 import CallToAction from './components/CallToAction';
 import Footer from './components/Footer';
 
@@ -18,6 +19,7 @@ const App: React.FC = () => {
         <Benefits />
         <Demo />
         <Diferenciais />
+        <Integrations />
         <CallToAction />
       </main>
       <Footer />
