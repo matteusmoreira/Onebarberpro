@@ -31,6 +31,9 @@ const Navbar: React.FC = () => {
             src="https://nestarts.com.br/wp-content/uploads/2025/11/ONE-BARBER-PRO-PNG-1.png"
             alt="OneBarber Pro"
             className="h-20 w-auto"
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
           />
         </div>
 

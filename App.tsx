@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import About from './components/About';
-import Benefits from './components/Benefits';
-import Demo from './components/Demo';
-import Diferenciais from './components/Diferenciais';
-import Integrations from './components/Integrations';
-import Testimonials from './components/Testimonials';
-import CallToAction from './components/CallToAction';
-import Footer from './components/Footer';
+const About = lazy(() => import('./components/About'));
+const Benefits = lazy(() => import('./components/Benefits'));
+const Demo = lazy(() => import('./components/Demo'));
+const Diferenciais = lazy(() => import('./components/Diferenciais'));
+const Integrations = lazy(() => import('./components/Integrations'));
+const Testimonials = lazy(() => import('./components/Testimonials'));
+const CallToAction = lazy(() => import('./components/CallToAction'));
+const Footer = lazy(() => import('./components/Footer'));
 
 const App: React.FC = () => {
   return (
@@ -16,15 +16,19 @@ const App: React.FC = () => {
       <Navbar />
       <main className="flex-grow">
         <Hero />
-        <About />
-        <Benefits />
-        <Demo />
-        <Diferenciais />
-        <Integrations />
-        <Testimonials />
-        <CallToAction />
+        <Suspense fallback={<div className="min-h-[50vh]" />}> 
+          <About />
+          <Benefits />
+          <Demo />
+          <Diferenciais />
+          <Integrations />
+          <Testimonials />
+          <CallToAction />
+        </Suspense>
       </main>
-      <Footer />
+      <Suspense fallback={<div className="h-24" />}> 
+        <Footer />
+      </Suspense>
     </div>
   );
 };

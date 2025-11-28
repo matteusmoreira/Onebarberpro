@@ -36,7 +36,7 @@ export function TestimonialCard({
     >
       <div className="flex items-center gap-3">
         <Avatar className="h-12 w-12 border border-neutral-800">
-          <AvatarImage src={author.avatar} alt={author.name} />
+          <AvatarImage src={author.avatar} alt={author.name} loading="lazy" decoding="async" />
           <AvatarFallback>{author.name.charAt(0)}</AvatarFallback>
         </Avatar>
         <div className="flex flex-col items-start">

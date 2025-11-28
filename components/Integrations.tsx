@@ -37,6 +37,8 @@ export default function Integrations() {
                                 src={icon.url}
                                 alt={icon.name}
                                 className="h-16 w-16 object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                                loading="lazy"
+                                decoding="async"
                             />
                         </div>
                         <span className="mt-3 text-sm font-medium text-gray-500 group-hover:text-white transition-colors duration-300 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transform">
@@ -53,6 +55,8 @@ export default function Integrations() {
                                 src={icon.url}
                                 alt={icon.name}
                                 className="h-16 w-16 object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                                loading="lazy"
+                                decoding="async"
                             />
                         </div>
                         <span className="mt-3 text-sm font-medium text-gray-500 group-hover:text-white transition-colors duration-300 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transform">

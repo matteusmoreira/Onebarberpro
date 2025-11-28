@@ -59,6 +59,8 @@ const Demo: React.FC = () => {
                 onError={() => setImgSrc('https://picsum.photos/id/445/800/600')}
                 alt="Agenda e edição de ordem"
                 className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
+                loading="lazy"
+                decoding="async"
               />
               {import.meta.env.DEV && (
                 <div className="absolute top-3 right-3 z-20">
@@ -72,6 +74,7 @@ const Demo: React.FC = () => {
                 src="https://www.youtube.com/embed/VaEm0P4mJ-o" 
                 title="Apresentação One Barber Pro" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                loading="lazy"
                 allowFullScreen
               ></iframe>
               

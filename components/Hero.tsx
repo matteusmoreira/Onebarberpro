@@ -10,6 +10,9 @@ const Hero: React.FC = () => {
           src="https://deltabarbearia.com.br/wp-content/uploads/2025/04/barbearia-em-fortaleza-7.webp" 
           alt="Barbershop ambiance" 
           className="w-full h-full object-cover opacity-40 grayscale contrast-125"
+          loading="eager"
+          decoding="async"
+          fetchpriority="low"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-neutral-950/90 via-neutral-950/80 to-neutral-950"></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-gold-600/10 via-transparent to-transparent"></div>
@@ -52,6 +55,9 @@ const Hero: React.FC = () => {
               src="https://i.ibb.co/nNrxJwfQ/unnamed.jpg" 
               alt="Dashboard Preview on Laptop" 
               className="relative w-full rounded-xl shadow-2xl shadow-black border border-white/10 z-10"
+              loading="eager"
+              decoding="async"
+              fetchpriority="high"
             />
             
             {/* Floating Phone Mockup */}
@@ -60,6 +66,9 @@ const Hero: React.FC = () => {
                 src="https://i.ibb.co/F43mnFN2/cel-mockup.png" 
                 alt="Mobile Schedule" 
                 className="w-full h-auto drop-shadow-2xl"
+                loading="lazy"
+                decoding="async"
+                fetchpriority="auto"
               />
             </div>
           </div>
