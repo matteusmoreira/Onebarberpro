@@ -42,7 +42,7 @@ const Demo: React.FC = () => {
             </p>
             
             <ul className="space-y-4 mt-6">
-                {['Design Responsivo (Celular, Tablet e PC)', 'Tema Escuro Nativo', 'Carregamento Ultra-rápido'].map((item, i) => (
+                {['Design Responsivo (Celular, Tablet e PC)', 'Sistema 100% Cloud', 'Carregamento Ultra-rápido'].map((item, i) => (
                     <li key={i} className="flex items-center gap-3 text-gray-300">
                         <div className="w-2 h-2 bg-gold-500 rounded-full shadow-[0_0_10px_rgba(197,160,40,0.8)]"></div>
                         {item}
@@ -66,21 +66,16 @@ const Demo: React.FC = () => {
                   <button onClick={() => fileInputRef.current?.click()} className="px-3 py-1 text-xs rounded bg-neutral-900/80 border border-white/10 text-white hover:bg-neutral-800">Trocar imagem</button>
                 </div>
               )}
-              {/* Overlay Gradient */}
-              <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent opacity-80"></div>
+              {/* YouTube Video */}
+              <iframe 
+                className="absolute inset-0 w-full h-full" 
+                src="https://www.youtube.com/embed/VaEm0P4mJ-o" 
+                title="Apresentação One Barber Pro" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen
+              ></iframe>
               
-              <div className="absolute bottom-6 left-6 right-6">
-                <div className="bg-neutral-900/90 backdrop-blur border border-white/10 p-4 rounded-lg shadow-xl flex items-center gap-4">
-                    <img src="https://picsum.photos/id/64/100/100" alt="Avatar" className="w-12 h-12 rounded-full border-2 border-gold-500" />
-                    <div>
-                        <p className="text-white font-semibold">Próximo Cliente</p>
-                        <p className="text-gold-400 text-sm">14:30 - Corte + Barba</p>
-                    </div>
-                    <div className="ml-auto bg-green-500/20 text-green-400 px-3 py-1 rounded text-xs font-bold uppercase border border-green-500/30">
-                        Confirmado
-                    </div>
-                </div>
-              </div>
+
             </div>
             
             {/* Decorative Elements */}

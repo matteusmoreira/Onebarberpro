@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
       {/* Background Image & Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://picsum.photos/id/1033/1920/1080" 
+          src="https://deltabarbearia.com.br/wp-content/uploads/2025/04/barbearia-em-fortaleza-7.webp" 
           alt="Barbershop ambiance" 
           className="w-full h-full object-cover opacity-40 grayscale contrast-125"
         />
@@ -18,14 +18,14 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-6 z-10 grid md:grid-cols-2 gap-12 items-center">
         
         {/* Text Content */}
-        <div className="space-y-8 text-center md:text-left">
+        <div className="space-y-8 text-center md:text-left relative z-30">
           <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full border border-gold-500/30 bg-gold-500/10 backdrop-blur-sm">
             <ShieldCheck className="w-4 h-4 text-gold-400" />
             <span className="text-xs font-bold tracking-widest text-gold-400 uppercase">Sistema Vitalício</span>
           </div>
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white drop-shadow-2xl">
-            O agendamento vitalício que sua barbearia <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-300 to-gold-600">sempre pediu.</span>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white drop-shadow-2xl">
+            Agendamento vitalício que sua barbearia merece!
           </h1>
           
           <p className="text-lg md:text-xl text-gray-400 max-w-lg mx-auto md:mx-0 font-light border-l-2 border-gold-500/50 pl-6">
@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <a href="https://wa.me/+5522992938311" target="_blank" rel="noopener noreferrer" className="group relative px-8 py-4 bg-gold-600 hover:bg-gold-500 text-neutral-950 font-bold rounded-lg shadow-[0_0_20px_rgba(197,160,40,0.3)] transition-all duration-300 overflow-hidden">
+            <a href="https://wa.me/+552231995267" target="_blank" rel="noopener noreferrer" className="group relative px-8 py-4 bg-gold-600 hover:bg-gold-500 text-neutral-950 font-bold rounded-lg shadow-[0_0_20px_rgba(197,160,40,0.3)] transition-all duration-300 overflow-hidden">
               <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
               <span className="relative flex items-center justify-center gap-2">
                 QUERO MEU SISTEMA AGORA <ArrowRight className="w-5 h-5" />
@@ -49,22 +49,18 @@ const Hero: React.FC = () => {
           
           <div className="relative transform group-hover:rotate-1 transition-transform duration-700 ease-out">
             <img 
-              src="https://picsum.photos/id/3/1200/800" 
+              src="https://i.ibb.co/nNrxJwfQ/unnamed.jpg" 
               alt="Dashboard Preview on Laptop" 
               className="relative w-full rounded-xl shadow-2xl shadow-black border border-white/10 z-10"
             />
             
             {/* Floating Phone Mockup */}
             <div className="absolute -bottom-10 -left-6 w-1/3 z-20 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-100">
-              <div className="bg-neutral-900 rounded-3xl p-1.5 shadow-2xl shadow-black border border-neutral-700">
-                <div className="bg-black rounded-2xl overflow-hidden border border-neutral-800 h-full">
-                    <img 
-                        src="https://picsum.photos/id/160/400/800"
-                        alt="Mobile Schedule" 
-                        className="w-full h-auto opacity-80"
-                    />
-                </div>
-              </div>
+              <img 
+                src="https://i.ibb.co/F43mnFN2/cel-mockup.png" 
+                alt="Mobile Schedule" 
+                className="w-full h-auto drop-shadow-2xl"
+              />
             </div>
           </div>
         </div>
