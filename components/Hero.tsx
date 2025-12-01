@@ -42,6 +42,10 @@ const Hero: React.FC = () => {
                 QUERO MEU SISTEMA AGORA <ArrowRight className="w-5 h-5" />
               </span>
             </a>
+            
+            <a href="https://app.onebarberpro.com/agendamento" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-neutral-900/80 hover:bg-neutral-800 text-white border border-neutral-700 hover:border-gold-500 font-bold rounded-lg transition-all duration-300 flex items-center justify-center gap-2 backdrop-blur-sm">
+              Faça um teste como cliente
+            </a>
           </div>
         </div>
 
