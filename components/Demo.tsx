@@ -71,7 +71,7 @@ const Demo: React.FC = () => {
               {/* YouTube Video */}
               <iframe 
                 className="absolute inset-0 w-full h-full" 
-                src="https://www.youtube.com/embed/VaEm0P4mJ-o" 
+                src="https://www.youtube.com/embed/CDVzZRyT1tc" 
                 title="Apresentação One Barber Pro" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 loading="lazy"
